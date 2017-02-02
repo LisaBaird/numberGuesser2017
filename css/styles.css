@@ -1,0 +1,116 @@
+
+body {
+  height: 100%;
+  width: 100%;
+  border: 8px solid grey;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: black;
+  height: 80px;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 44px;
+  padding-top: 10px;
+}
+.numberStyle {
+  color: #ED458B;
+  font-weight: 700;
+}
+.guesserStyle {
+  color: #E6E7E8;
+  font-weight: 300;
+}
+#guessBox {
+  background-color: white;
+  height: 35px;
+  width: 300px;
+  border: 2px solid #D0D2D3;
+  text-align: center;
+  font-size: 25px;
+  margin: 30px auto;
+  display: block;
+}
+.buttonBlock {
+  width: 400px;
+  margin: auto;
+}
+#guessBtn:disabled{
+  background-color: #D0D2D3
+}
+#guessBtn, #clearBtn4 {
+  background-color: #929497;
+  border: none;
+  color: #FFFFFF;
+  width:175px;
+  height: 34px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  border-radius: 25px;
+  font-size: 25px;
+  font-weight: 300;
+}
+.sentence {
+  font-size: 28px;
+  padding-top: 30px;
+  color: #404041;
+  height: 35px;
+  width: auto;
+  text-align: center;
+}
+#numberInput {
+  height: 150px;
+  width: 150px;
+  margin: 30px auto;
+  font-size: 80px;
+  font-weight:700;
+  color: #EB008B;
+  text-align: center;
+  display: block;
+}
+#highLow {
+  height: 85px;
+  width: 270px;
+  margin: auto;
+  text-align: center;
+  color: #404041;
+  font-size: 25px;
+}
+#resetBtn {
+  width: 300px;
+  height: 35px;
+  background-color: #D0D2D3;
+  color: #FFFFFF;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-style: hidden;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 440px) {
+  body {
+    background-color:green;
+  }
+  #resetBtn: {
+    width: 240px;
+  }
+  # guessBox: {
+    width: 240px;
+  }
+  #clearBtn4: {
+    display:block;
+    margin:auto;
+  }
+}
