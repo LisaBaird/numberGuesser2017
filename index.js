@@ -7,7 +7,8 @@ var numberInput = document.getElementById("numberInput");
 var guessBtn4 = document.querySelector("#guessBtn");
 var highLow = document.getElementById("highLow");
 var clearBtn = document.querySelector("#clearBtn4");
-var reset = document.querySelector("#resetBtn")
+var reset = document.querySelector("#resetBtn");
+
 var minNum = 1;
 var maxNum = 100;
 var random = Math.floor((Math.random() * maxNum) + 1) ;
@@ -22,7 +23,7 @@ guessBtn4.addEventListener('click', function(){
  numberInput.innerText = guessBox.value
   if(guessBox.value > maxNum) {
     highLow.innerText = "Between 1 and 100 stupid!"
-  }else if (guessBox.value < minNum){
+  } else if (guessBox.value < minNum){
     highLow.innerText = "Between 1 and 100 stupid!"
   }  else if(guessBox.value < random) {
     highLow.innerText="Your guess is too low";
