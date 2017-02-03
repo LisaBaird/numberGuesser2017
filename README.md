@@ -1,3 +1,1 @@
-#### The NumberGuesser V.1.2game.
-This is the base game.  I will be adding a child version at a later time.
-[NumberGuesser2017](https://github.com/LisaBaird/numberGuesser2017)
+# numberGuesser2017. This is a simple "time-waste" game where you guess a computer generated random number between 1 and 100.
