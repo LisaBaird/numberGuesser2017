@@ -18,19 +18,26 @@ function randomizer() {
   random = Math.floor((Math.random() * maxNum) + 1);
   console.log(random, "random");
 }
+function range() {
+  var range = Math.min(Math.max(parseInt(guessBox.value, 10),1),100);
+  console.log(range);
+}
 
 guessBtn4.addEventListener('click', function(){
  numberInput.innerText = guessBox.value
   if(guessBox.value > maxNum) {
-    highLow.innerText = "Between 1 and 100 stupid!"
+    numberInput.innerText = " ";
+    alert("Guess again between 1 - 100");
   } else if (guessBox.value < minNum){
-    highLow.innerText = "Between 1 and 100 stupid!"
+    numberInput.innerText = " ";
+    alert("Guess again between 1 - 100");
   }  else if(guessBox.value < random) {
     highLow.innerText="Your guess is too low";
   } else if (guessBox.value > random) {
     highLow.innerText = "Your guess is too high";
   } else {
-    highLow.innerText = "BOOM!!"
+    highLow.innerText = "BOOM!!";
+    resetBtn.disabled = false;
   }
 });
 
@@ -43,10 +50,14 @@ clearBtn.addEventListener('click', function(){
 guessBox.addEventListener("keyup", function() {
   clearBtn.disabled = false;
   guessBtn.disabled = false;
+  resetBtn.disabled = true;
   console.log("guess box")
 })
 
 resetBtn.addEventListener('click', function() {
+  guessBtn.disabled = true;
+  clearBtn4.disabled = true;
+  resetBtn.disabled = true;
   guessBox.value = null;
   numberInput.innerText = "";
   highLow.innerText = "";

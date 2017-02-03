@@ -44,12 +44,20 @@ h1 {
   width: 400px;
 }
 
-#guessBtn:disabled{
-  background-color: #D0D2D3;
-
-}
-#guessBtn, #clearBtn4 {
+#guessBtn:disabled {
   background-color: #929497;
+}
+
+#guessBtn {
+  background-color: #D0D2D3;
+}
+
+#clearBtn4:disabled {
+  background-color: #929497;
+}
+
+#guessBtn, #clearBtn4 {
+  background-color: #D0D2D3;
   border-radius: 25px;
   border: none;
   color: #FFFFFF;
@@ -60,7 +68,7 @@ h1 {
   margin: 10px;
   text-align: center;
   text-decoration: none;
-  width:175px;
+  width: 175px;
 }
 
 .sentence {
@@ -75,8 +83,8 @@ h1 {
 #numberInput {
   color: #EB008B;
   display: block;
-  font-size: 100px;
-  font-weight:300;
+  font-size: 110px;
+  font-weight: 300;
   height: 150px;
   margin: 30px auto;
   text-align: center;
@@ -91,6 +99,10 @@ h1 {
   text-align: center;
   width: 270px;
 }
+#resetBtn:disabled {
+  background-color: #929497;
+}
+
 #resetBtn {
   background-color: #D0D2D3;
   border-radius: 25px;
@@ -109,9 +121,7 @@ h1 {
 }
 
 @media only screen and (max-width: 440px) {
-  body {
-    background-color:green;
-  }
+
   #guessBox {
     margin: 50px auto;
   }
@@ -125,11 +135,11 @@ h1 {
   }
   #guessBtn {
     display:block;
-    margin:10px auto;
+    margin: 10px auto;
   }
   #clearBtn4 {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
   }
   .buttonBlock {
     width: 185px;
@@ -138,7 +148,7 @@ h1 {
     height: 50px;
   }
   #inputNumber {
-    margin:10px 0px;
+    margin: 10px 0px;
   }
   .sentence {
     padding: 0px;
